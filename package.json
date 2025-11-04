@@ -1,6 +1,6 @@
 {
   "name": "dom-node-export",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "A TypeScript library for exporting any DOM element, including styles, images, and web fonts, into a standalone XHTML document as a data URL.",
   "author": "Yegor Pelykh <yegor.dev@gmail.com>",
   "license": "MIT",
