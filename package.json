@@ -1,38 +1,84 @@
 {
   "name": "dom-node-export",
   "version": "1.0.2",
-  "description": "A package for exporting the DOM element to a separate xhtml document.",
+  "description": "A TypeScript library for exporting any DOM element, including styles, images, and web fonts, into a standalone XHTML document as a data URL.",
   "author": "Yegor Pelykh <yegor.dev@gmail.com>",
   "license": "MIT",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/yegor-pelykh/dom-node-export"
   },
+  "homepage": "https://github.com/yegor-pelykh/dom-node-export#readme",
+  "bugs": {
+    "url": "https://github.com/yegor-pelykh/dom-node-export/issues"
+  },
   "keywords": [
     "dom",
-    "node",
     "export",
     "xhtml",
     "html",
+    "dataurl",
+    "typescript",
+    "webfonts",
+    "css",
+    "snapshot",
+    "serialization",
+    "browser",
+    "element",
+    "node",
+    "clone",
+    "copy",
+    "standalone",
+    "embed",
+    "image",
+    "font",
+    "font-face",
+    "google-fonts",
+    "stylesheet",
+    "style",
+    "inline",
+    "canvas",
+    "svg",
+    "web",
+    "frontend",
+    "ui",
+    "save",
+    "download",
+    "screenshot",
+    "capture",
+    "serialize",
     "document",
-    "computed"
+    "component",
+    "render",
+    "exporter",
+    "utility",
+    "toolkit"
   ],
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "files": [
     "lib/**/*.js",
-    "lib/**/*d.ts"
+    "lib/**/*.d.ts"
   ],
   "scripts": {
     "build": "tsc",
-    "build-watch": "tsc -w",
-    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\" --no-error-on-unmatched-pattern",
-    "lint": "tslint -p tsconfig.json",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint \"src/**/*.{ts,tsx}\"",
+    "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,md}\"",
+    "prepare": "npm run build",
+    "release": "release-it"
   },
   "devDependencies": {
-    "prettier": "^2.7.1",
-    "tslint": "^6.1.3",
-    "tslint-config-prettier": "^1.18.0",
-    "typescript": "^4.7.4"
+    "@typescript-eslint/eslint-plugin": "^8.46.3",
+    "@typescript-eslint/parser": "^8.46.3",
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "prettier": "^3.6.2",
+    "release-it": "^19.0.5",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
